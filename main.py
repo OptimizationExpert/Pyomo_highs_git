@@ -11,10 +11,6 @@
 
 import pyomo.environ as pyo
 from pyomo.contrib.appsi.solvers.highs import Highs
-
-
-opt = Highs()
-
 m = pyo.ConcreteModel()
 m.x = pyo.Var(bounds=(-10, 10))
 m.y = pyo.Var()
